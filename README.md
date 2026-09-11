@@ -38,7 +38,16 @@
     - Write clean, type-safe, production-ready code.
     - Follow SOLID principles.
     - Provide concise explanations with code diffs.
-    ```
+### ⚡ 极客一行命令终端极速配置（免手动建文件）
+在项目根目录打开终端直接执行，交互式选择所需语言即可一键写入 `.cursorrules`：
+* **Windows (PowerShell)**：
+  ```powershell
+  irm https://ruandawa-ux.github.io/ai-tools-hub/install.ps1 | iex
+  ```
+* **macOS / Linux (Bash)**：
+  ```bash
+  curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/install.sh | bash
+  ```
 
 ### 2. Claude 3.7 / ChatGPT-4o 稳定网络与环境避坑
 *   **节点与 IP 纯净度**：严禁使用万人共享的低价机场（已被加入 OpenAI / Anthropic 黑名单），推荐原生住宅 IP 或冷门专线。

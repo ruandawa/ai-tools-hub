@@ -8,6 +8,8 @@
   <meta name="keywords" content="Cursor, Claude, ChatGPT, API, AI开发, Cursor Pro, AI导航" />
   <!-- RSS 2.0 自动同步订阅源 -->
   <link rel="alternate" type="application/rss+xml" title="AI TechHub RSS Feed" href="https://ruandawa-ux.github.io/ai-tools-hub/rss.xml" />
+  <!-- LLMs.txt 生成式 AI 搜索标准 -->
+  <link rel="alternate" type="text/plain" href="https://ruandawa-ux.github.io/ai-tools-hub/llms.txt" title="LLMs.txt" />
   <!-- Schema.org JSON-LD 国际结构化数据，利于全球搜索引擎与比价爬虫收录 -->
   <script type="application/ld+json">
   [
@@ -274,6 +276,54 @@
       </div>
     </div>
 
+    <!-- Terminal One-Liner Section -->
+    <div class="mb-16 rounded-2xl glass-card p-6 sm:p-8 border border-indigo-500/30 relative overflow-hidden">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-3 border border-emerald-500/20">
+            <i data-lucide="terminal" class="w-3.5 h-3.5"></i>
+            极客免配置 · 一行命令秒级初始化
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-white mb-2">在终端一行命令安装 Cursor Rules 规则</h2>
+          <p class="text-gray-400 text-sm max-w-xl">
+            无需手动创建文件。在项目根目录下复制运行以下命令，交互式选择所需语言（React/Vue/Python/Go）即可一键生成生产级规则。
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
+        <!-- Windows PowerShell -->
+        <div class="bg-[#0f172a] rounded-xl p-4 border border-slate-700/60 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-sky-400 flex items-center gap-1.5">
+              <i data-lucide="monitor" class="w-3.5 h-3.5"></i> Windows (PowerShell)
+            </span>
+            <button onclick="copyCommand('irm https://ruandawa-ux.github.io/ai-tools-hub/install.ps1 | iex')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
+              <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
+            </button>
+          </div>
+          <code class="text-xs sm:text-sm text-gray-200 font-mono select-all break-all bg-slate-900/80 p-2.5 rounded border border-slate-800 block">
+            irm https://ruandawa-ux.github.io/ai-tools-hub/install.ps1 | iex
+          </code>
+        </div>
+
+        <!-- macOS / Linux -->
+        <div class="bg-[#0f172a] rounded-xl p-4 border border-slate-700/60 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+              <i data-lucide="terminal-square" class="w-3.5 h-3.5"></i> macOS / Linux (Bash)
+            </span>
+            <button onclick="copyCommand('curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/install.sh | bash')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
+              <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
+            </button>
+          </div>
+          <code class="text-xs sm:text-sm text-gray-200 font-mono select-all break-all bg-slate-900/80 p-2.5 rounded border border-slate-800 block">
+            curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/install.sh | bash
+          </code>
+        </div>
+      </div>
+    </div>
+
     <!-- FAQ Section -->
     <div class="max-w-3xl mx-auto mb-16">
       <h2 class="text-2xl font-bold text-white text-center mb-8">常见问题解答 (FAQ)</h2>
@@ -351,6 +401,14 @@
         alert('官方 QQ 交流群号【545064986】已复制到剪贴板！\\n请打开 QQ 搜索并申请加入交流。');
       }).catch(function() {
         prompt('请长按复制官方 QQ 交流群号：', '545064986');
+      });
+    }
+
+    function copyCommand(cmdText) {
+      navigator.clipboard.writeText(cmdText).then(function() {
+        alert('终端命令已成功复制到剪贴板！\\n请在项目根目录下打开终端直接粘贴运行：\\n' + cmdText);
+      }).catch(function() {
+        prompt('请长按复制终端命令：', cmdText);
       });
     }
   </script>

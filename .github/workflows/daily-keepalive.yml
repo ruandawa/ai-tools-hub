@@ -1,0 +1,57 @@
+name: Daily Keep-Alive & Auto Indexing
+
+on:
+  schedule:
+    # 每天北京时间凌晨 04:00 (UTC 20:00) 自动执行
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive-and-submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update Sitemap & RSS Timestamps
+        run: |
+          python -c "
+          import datetime, re
+
+          today_iso = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
+          today_rss = datetime.datetime.now(datetime.timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')
+
+          # Update sitemap.xml
+          with open('sitemap.xml', 'r', encoding='utf-8') as f:
+              content = f.read()
+          content = re.sub(r'<lastmod>.*?</lastmod>', f'<lastmod>{today_iso}</lastmod>', content)
+          with open('sitemap.xml', 'w', encoding='utf-8') as f:
+              f.write(content)
+
+          # Update rss.xml
+          with open('rss.xml', 'r', encoding='utf-8') as f:
+              rss = f.read()
+          rss = re.sub(r'<lastBuildDate>.*?</lastBuildDate>', f'<lastBuildDate>{today_rss}</lastBuildDate>', rss)
+          with open('rss.xml', 'w', encoding='utf-8') as f:
+              f.write(rss)
+          "
+
+      - name: Run Global Search Engines Ping & IndexNow
+        run: |
+          python scripts/submit_search_engines.py || true
+          python scripts/submit_ai_directories.py || true
+
+      - name: Commit and Push Keep-Alive Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml rss.xml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(keepalive): daily auto refresh sitemap and global index ping [skip ci]" && git push)
