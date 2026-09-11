@@ -4,13 +4,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/)
+[![QQ Group](https://img.shields.io/badge/QQ交流群-545064986-12B7F5.svg?logo=qq&logoColor=white)](https://ruandawa-ux.github.io/ai-tools-hub/)
 [![24H Auto Delivery](https://img.shields.io/badge/24H%20Service-wzyp.cn%2Fshop%2Fdawa-indigo)](https://wzyp.cn/shop/dawa)
 [![Stars](https://img.shields.io/github/stars/ruandawa-ux/ai-tools-hub?style=social)](https://github.com/ruandawa-ux/ai-tools-hub)
 
 **专为国内开发者、学术科研者与效率极客打造的 AI 生产力导航与独享通道。**  
 告别繁琐的海外外币卡限制与封号焦虑，一站式解决环境配置与正规直充。
 
-[👉 进入 24小时官方自主发卡小站 (wzyp.cn/shop/dawa)](https://wzyp.cn/shop/dawa) · [在线独立导航站 (Pages)](https://ruandawa-ux.github.io/ai-tools-hub/)
+[👉 进入 24小时官方自主发卡小站 (wzyp.cn/shop/dawa)](https://wzyp.cn/shop/dawa) · [在线独立导航站 (Pages)](https://ruandawa-ux.github.io/ai-tools-hub/) · [💬 官方 QQ 群：545064986](https://ruandawa-ux.github.io/ai-tools-hub/)
 
 </div>
 
@@ -77,7 +78,8 @@
 ---
 
 ## 🤝 贡献与技术交流
-欢迎提交 PR 与 Issue 分享最新的 AI 配置经验与避坑心得！
+* **官方 QQ 交流群**：**`545064986`**（技术交流、Cursor/Claude 问题咨询、优惠活动同步）
+* 欢迎提交 PR 与 Issue 分享最新的 AI 配置经验与避坑心得！
 
 ## 📄 开源许可证
 本项目遵循 [MIT License](./LICENSE) 开源协议。
