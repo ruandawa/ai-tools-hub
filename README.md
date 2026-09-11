@@ -5,12 +5,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/)
 [![24H Auto Delivery](https://img.shields.io/badge/24H%20Service-wzyp.cn%2Fshop%2Fdawa-indigo)](https://wzyp.cn/shop/dawa)
-[![Stars](https://img.shields.io/github/stars/yourusername/ai-tools-hub?style=social)](https://github.com/)
+[![Stars](https://img.shields.io/github/stars/ruandawa-ux/ai-tools-hub?style=social)](https://github.com/ruandawa-ux/ai-tools-hub)
 
 **专为国内开发者、学术科研者与效率极客打造的 AI 生产力导航与独享通道。**  
 告别繁琐的海外外币卡限制与封号焦虑，一站式解决环境配置与正规直充。
 
-[👉 进入 24小时官方自主发卡小站 (wzyp.cn/shop/dawa)](https://wzyp.cn/shop/dawa) · [在线独立导航站 (Pages)](./index.html)
+[👉 进入 24小时官方自主发卡小站 (wzyp.cn/shop/dawa)](https://wzyp.cn/shop/dawa) · [在线独立导航站 (Pages)](https://ruandawa-ux.github.io/ai-tools-hub/)
 
 </div>
 
@@ -69,11 +69,10 @@
 
 本项目内置单页 HTML5 独立导航站（`index.html`）。
 
-### 一键部署到 GitHub Pages：
-1. Fork 本仓库到你自己的 GitHub 账号；
-2. 进入仓库的 **Settings** $\to$ **Pages**；
-3. **Branch** 选择 `main` 分支，目录选择 `/ (root)`，点击 **Save**；
-4. 几秒钟后，你将获得一个全球 CDN 加速、在微信/各大平台直接秒开的专属导航站域名（如 `https://<your-username>.github.io/<repo-name>/`）！
+### 访问你的专属独立导航站：
+可以直接访问：
+👉 **https://ruandawa-ux.github.io/ai-tools-hub/**
+（全免费、全球 CDN 加速、国内直接秒开不报红）
 
 ---
 
