@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ruandawa-ux.github.io/ai-tools-hub/sitemap.xml
