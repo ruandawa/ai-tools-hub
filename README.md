@@ -11,7 +11,7 @@
 **专为国内开发者、学术科研者与效率极客打造的 AI 生产力导航与独享通道。**  
 告别繁琐的海外外币卡限制与封号焦虑，一站式解决环境配置与正规直充。
 
-[👉 进入 24小时官方自主发卡小站 (wzyp.cn/shop/dawa)](https://wzyp.cn/shop/dawa) · [在线独立导航站 (Pages)](https://ruandawa-ux.github.io/ai-tools-hub/) · [💬 官方 QQ 群：545064986](https://ruandawa-ux.github.io/ai-tools-hub/)
+[👉 进入 24小时官方自主发卡小站 (wzyp.cn/shop/dawa)](https://wzyp.cn/shop/dawa) · [📦 百度网盘全套资料包 (提取码: acp9)](https://pan.baidu.com/s/1wphjJkW0e0g9mvqztEcv4A?pwd=acp9) · [在线独立导航站 (Pages)](https://ruandawa-ux.github.io/ai-tools-hub/) · [💬 官方 QQ 群：545064986](https://ruandawa-ux.github.io/ai-tools-hub/)
 
 </div>
 
@@ -72,6 +72,15 @@
 - 💳 **正规海外原卡直充**：坚持一手正品渠道，拒绝盗刷黑料，保障账号长久稳定。
 - 🛡️ **首登质保与售后支持**：全品类提供售前咨询与售后质保服务，技术专人指导。
 - 👥 **独享号 / 批发 / 合租车位**：满足不同频次与预算的灵活需求。
+
+---
+
+## 📦 官方百度网盘配置包免费直取
+
+免翻极速下载全套离线配置、万字防封手册与批处理工具包：
+* 🔗 **百度网盘下载**：[点击前往百度网盘](https://pan.baidu.com/s/1wphjJkW0e0g9mvqztEcv4A?pwd=acp9)
+* 🔑 **提取码**：`acp9`
+* 📁 **文件名称**：`2026_OpenAI_ChatGPT与Cursor全套独享配置包.zip`
 
 ---
 
