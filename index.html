@@ -311,6 +311,31 @@
       </div>
     </div>
 
+    <!-- Interactive OpenAI API Key Checker Tool (Lead Generation Magnet) -->
+    <div class="mb-16 rounded-2xl glass-card p-6 sm:p-8 border border-cyan-500/30 relative overflow-hidden bg-gradient-to-br from-cyan-950/20 via-gray-900/60 to-gray-950">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-3 border border-cyan-500/20">
+          <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+          极客实用小工具 · 在线即时检测
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white mb-2">OpenAI API Key 状态与可用性在线测速</h2>
+        <p class="text-gray-400 text-sm mb-6">
+          免费在线检测您的 OpenAI API Key 连通性、模型权限（GPT-4o）与额度健康度。纯前端本地请求，不上传保存任何私钥。
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 mb-4">
+          <input id="testApiKey" type="password" placeholder="输入 sk- 开头的 API Key 进行健康体检..." class="flex-1 px-4 py-3 rounded-xl bg-gray-950 border border-gray-700 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-cyan-500 transition" />
+          <button onclick="checkApiKeyHealth()" class="px-6 py-3 rounded-xl font-bold bg-cyan-600 hover:bg-cyan-500 text-white text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-cyan-600/20">
+            <i data-lucide="zap" class="w-4 h-4"></i>
+            <span>立即体检</span>
+          </button>
+        </div>
+
+        <!-- Result Box -->
+        <div id="checkResult" class="hidden rounded-xl p-4 text-xs transition-all"></div>
+      </div>
+    </div>
+
     <!-- Netdisk Resource Pack Section -->
     <div class="mb-16 rounded-2xl glass-card p-6 sm:p-8 border border-emerald-500/30 relative overflow-hidden bg-gradient-to-br from-emerald-950/20 via-gray-900/50 to-gray-950">
       <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
@@ -471,6 +496,37 @@
       }).catch(function() {
         prompt('请长按复制终端命令：', cmdText);
       });
+    }
+
+    async function checkApiKeyHealth() {
+      const key = document.getElementById('testApiKey').value.trim();
+      const resBox = document.getElementById('checkResult');
+      if (!key || !key.startsWith('sk-')) {
+        resBox.className = 'rounded-xl p-4 text-xs bg-amber-500/10 border border-amber-500/30 text-amber-300 block';
+        resBox.innerHTML = '⚠️ 请输入有效的 OpenAI API Key（以 sk- 开头）进行体检。';
+        return;
+      }
+      resBox.className = 'rounded-xl p-4 text-xs bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 block';
+      resBox.innerHTML = '⏳ 正在向 OpenAI 节点发起毫秒级连通性体检...';
+      const start = Date.now();
+      try {
+        const resp = await fetch('https://api.openai.com/v1/models', {
+          headers: { 'Authorization': 'Bearer ' + key }
+        });
+        const latency = Date.now() - start;
+        if (resp.status === 200) {
+          resBox.className = 'rounded-xl p-4 text-xs bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 block';
+          resBox.innerHTML = '✅ <strong>体检合格！</strong> API Key 状态正常，响应延迟: ' + latency + 'ms，已支持 GPT-4o 模型调用。';
+        } else {
+          const err = await resp.json().catch(() => ({}));
+          const errMsg = (err.error && err.error.message) ? err.error.message : ('HTTP ' + resp.status);
+          resBox.className = 'rounded-xl p-4 text-xs bg-red-500/15 border border-red-500/30 text-red-300 block';
+          resBox.innerHTML = '❌ <strong>检测到异常状态：</strong>' + errMsg + '<br/><div class="mt-3 flex flex-wrap items-center gap-3"><a href="https://wzyp.cn/shop/dawa" target="_blank" class="px-3 py-1.5 rounded-lg bg-red-600 text-white font-bold hover:bg-red-500 transition">👉 立即在官方小店换用正规稳定 API Key</a><span class="text-gray-400">官方技术售后QQ群：545064986</span></div>';
+        }
+      } catch (e) {
+        resBox.className = 'rounded-xl p-4 text-xs bg-red-500/15 border border-red-500/30 text-red-300 block';
+        resBox.innerHTML = '❌ <strong>网络直连受阻：</strong>由于国内网络环境限制，直接请求 api.openai.com 发生超时或阻断。<br/><div class="mt-3 flex flex-wrap items-center gap-3"><a href="https://wzyp.cn/shop/dawa" target="_blank" class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-500 transition">👉 获取国内免翻官方 Key / 独享号 (wzyp.cn/shop/dawa)</a><span class="text-gray-400">官方技术售后QQ群：545064986</span></div>';
+      }
     }
   </script>
 </body>
