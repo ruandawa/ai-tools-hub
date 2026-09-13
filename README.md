@@ -7,6 +7,7 @@
 [![QQ Group](https://img.shields.io/badge/QQ交流群-545064986-12B7F5.svg?logo=qq&logoColor=white)](https://ruandawa-ux.github.io/ai-tools-hub/)
 [![24H Auto Delivery](https://img.shields.io/badge/24H%20Service-wzyp.cn%2Fshop%2Fdawa-indigo)](https://wzyp.cn/shop/dawa)
 [![Stars](https://img.shields.io/github/stars/ruandawa-ux/ai-tools-hub?style=social)](https://github.com/ruandawa-ux/ai-tools-hub)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ruandawa-ux/ai-tools-hub)
 
 **专为国内开发者、学术科研者与效率极客打造的 AI 生产力导航与独享通道。**  
 告别繁琐的海外外币卡限制与封号焦虑，一站式解决环境配置与正规直充。
