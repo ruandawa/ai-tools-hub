@@ -1,0 +1,33 @@
+# ==============================================================================
+# 2026 全球 AI 生产力工具直连与智能分流规则集 (Clash / Mihomo / Surge / Quantumult X)
+# 
+# 维护者: ruandawa-ux (AI TechHub)
+# 🛒 24小时官方自主发卡小店 (ChatGPT Plus 原卡代充 / Cursor Pro / 商业 API): https://wzyp.cn/shop/dawa
+# 💬 官方技术与节点防封交流 QQ 群: 545064986
+# 🌐 开源导航与避坑指南: https://ruandawa-ux.github.io/ai-tools-hub/
+# 
+# 更新周期: 自动每日同步最新 OpenAI, Claude, Cursor 节点集群
+# ==============================================================================
+
+payload:
+  # --- OpenAI & ChatGPT ---
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN,api.openai.com
+  - DOMAIN,auth0.openai.com
+  - DOMAIN,platform.openai.com
+
+  # --- Cursor AI IDE ---
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,todesktop.com
+  - DOMAIN,api2.cursor.sh
+  - DOMAIN,repo42.cursor.sh
+
+  # --- Anthropic & Claude ---
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-KEYWORD,claude
