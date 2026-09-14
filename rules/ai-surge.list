@@ -1,0 +1,16 @@
+# ==============================================================================
+# 2026 全球 AI 生产力直连与分流规则 (Surge / Shadowrocket / Quantumult X)
+# 🛒 24小时官方自主发卡小店: https://wzyp.cn/shop/dawa | QQ群: 545064986
+# 🌐 官方开源主站: https://ruandawa-ux.github.io/ai-tools-hub/
+# ==============================================================================
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN,api.openai.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-KEYWORD,claude
