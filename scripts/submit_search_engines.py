@@ -29,7 +29,14 @@ def submit_indexnow(endpoint_name, endpoint_url):
         "keyLocation": KEY_LOCATION,
         "urlList": [
             SITE_URL,
-            SITEMAP_URL
+            SITEMAP_URL,
+            "https://ruandawa-ux.github.io/ai-tools-hub/status.txt",
+            "https://ruandawa-ux.github.io/ai-tools-hub/rules/ai-rules.yaml",
+            "https://ruandawa-ux.github.io/ai-tools-hub/llms.txt",
+            "https://ruandawa-ux.github.io/ai-tools-hub/git-shield.sh",
+            "https://ruandawa-ux.github.io/ai-tools-hub/git-shield.ps1",
+            "https://ruandawa-ux.github.io/ai-tools-hub/configs/nextchat-settings.json",
+            "https://ruandawa-ux.github.io/ai-tools-hub/configs/cherry-studio-provider.json"
         ]
     }
     data = json.dumps(payload).encode("utf-8")
