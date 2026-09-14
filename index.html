@@ -336,6 +336,60 @@
       </div>
     </div>
 
+    <!-- Multi-Ecosystem Tools: Tampermonkey, Postman, Docker -->
+    <div class="mb-16 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- 1. Tampermonkey Card -->
+      <div class="p-6 rounded-2xl glass-card border border-emerald-500/30 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-900/50 border border-emerald-500/30 flex items-center justify-center mb-3 text-emerald-400">
+            <i data-lucide="puzzle" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">ChatGPT 油猴优化脚本</h3>
+          <p class="text-gray-400 text-xs mb-4">
+            免翻常驻提示词面板、网络诊断与官方发卡通道，一键注入 ChatGPT 官方网页。
+          </p>
+        </div>
+        <a href="chatgpt-helper.user.js" target="_blank" class="w-full py-2 rounded-lg bg-emerald-600/30 hover:bg-emerald-600/50 text-emerald-300 border border-emerald-500/30 text-xs font-semibold text-center transition flex items-center justify-center gap-1.5">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>一键安装油猴脚本</span>
+        </a>
+      </div>
+
+      <!-- 2. Postman Collection Card -->
+      <div class="p-6 rounded-2xl glass-card border border-orange-500/30 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-orange-900/50 border border-orange-500/30 flex items-center justify-center mb-3 text-orange-400">
+            <i data-lucide="send" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">Postman 官方接口包</h3>
+          <p class="text-gray-400 text-xs mb-4">
+            GPT-4o 接口调试、模型枚举与 API 连通性测试 Collection，导入即用。
+          </p>
+        </div>
+        <a href="OpenAI_GPT4o_API_Diagnostics.postman_collection.json" download="OpenAI_GPT4o_API_Diagnostics.postman_collection.json" class="w-full py-2 rounded-lg bg-orange-600/30 hover:bg-orange-600/50 text-orange-300 border border-orange-500/30 text-xs font-semibold text-center transition flex items-center justify-center gap-1.5">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>下载 Postman 调试包</span>
+        </a>
+      </div>
+
+      <!-- 3. Docker Quickstart Card -->
+      <div class="p-6 rounded-2xl glass-card border border-blue-500/30 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-500/30 flex items-center justify-center mb-3 text-blue-400">
+            <i data-lucide="box" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">Docker 极速私有化镜像</h3>
+          <p class="text-gray-400 text-xs mb-4">
+            单行命令在本地或 VPS 部署独立无依赖 AI 工具导航与自取中枢。
+          </p>
+        </div>
+        <button onclick="copyCommand('docker run -d --name ai-hub -p 8080:80 ruandawa/ai-tools-hub:latest')" class="w-full py-2 rounded-lg bg-blue-600/30 hover:bg-blue-600/50 text-blue-300 border border-blue-500/30 text-xs font-semibold text-center transition flex items-center justify-center gap-1.5">
+          <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+          <span>复制 Docker 命令</span>
+        </button>
+      </div>
+    </div>
+
     <!-- Netdisk Resource Pack Section -->
     <div class="mb-16 rounded-2xl glass-card p-6 sm:p-8 border border-emerald-500/30 relative overflow-hidden bg-gradient-to-br from-emerald-950/20 via-gray-900/50 to-gray-950">
       <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">

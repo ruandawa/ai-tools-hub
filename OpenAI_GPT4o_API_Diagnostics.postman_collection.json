@@ -1,0 +1,77 @@
+{
+  "info": {
+    "name": "2026 OpenAI GPT-4o & Cursor API Quickstart & Diagnostics",
+    "description": "专为开发者调试 OpenAI GPT-4o、GPT-4 Turbo 及商业 API 打造的一站式 Postman Collection。\n\n内置模型权限检测、Chat 接口测速及高并发容错。\n\n🛒 24小时官方自主发卡小店: https://wzyp.cn/shop/dawa\n💬 官方技术与防封交流 QQ 群: 545064986\n🌐 开源技术导航站: https://ruandawa-ux.github.io/ai-tools-hub/",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "apiKey",
+      "value": "sk-your-openai-api-key-here",
+      "type": "string"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://api.openai.com/v1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. 连通性测试 - 获取可用模型列表 (List Models)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{apiKey}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/models",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "models"
+          ]
+        },
+        "description": "用于快速检测当前 API Key 是否有效、是否被官方拉黑或额度耗尽。\n\n如果返回 HTTP 401 或 429，说明 Key 已失效或被封控。\n官方正规 API Key / ChatGPT Plus 原卡代充直通: https://wzyp.cn/shop/dawa"
+      }
+    },
+    {
+      "name": "2. 对话补全测试 - GPT-4o 极速响应 (Chat Completion)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{apiKey}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"model\": \"gpt-4o\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello, please confirm your model name and status.\"\n    }\n  ],\n  \"temperature\": 0.7\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/chat/completions",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "chat",
+            "completions"
+          ]
+        },
+        "description": "测试 GPT-4o 模型的连通性、响应速度与 Token 扣除状态。\n\n如需稳定商业高并发 Key: https://wzyp.cn/shop/dawa | QQ群: 545064986"
+      }
+    }
+  ]
+}

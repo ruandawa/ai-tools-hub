@@ -1,0 +1,12 @@
+﻿version: '3.8'
+
+services:
+  ai-tools-hub:
+    image: ruandawa/ai-tools-hub:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-tools-hub
+    ports:
+      - "8080:80"
+    restart: always
