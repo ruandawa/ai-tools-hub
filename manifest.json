@@ -1,0 +1,16 @@
+{
+  "name": "2026 AI 生产力工具直通车",
+  "short_name": "AI TechHub",
+  "description": "2026 前沿 AI 生产力工具直达导航与官方正规发卡通道 (Cursor Pro / ChatGPT Plus / 商业API)",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

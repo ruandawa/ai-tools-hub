@@ -12,6 +12,9 @@
   <link rel="alternate" type="text/plain" href="https://ruandawa-ux.github.io/ai-tools-hub/llms.txt" title="LLMs.txt" />
   <!-- OpenSearch 浏览器地址栏极速搜索标准 -->
   <link rel="search" type="application/opensearchdescription+xml" title="AI TechHub (2026 AI工具导航)" href="https://ruandawa-ux.github.io/ai-tools-hub/opensearch.xml" />
+  <!-- PWA 渐进式桌面/移动端原生应用 -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#10b981" />
   <!-- Schema.org JSON-LD 国际结构化数据，利于全球搜索引擎与比价爬虫收录 -->
   <script type="application/ld+json">
   [
@@ -695,6 +698,9 @@
         if (prod) {
           prod.scrollIntoView({ behavior: 'smooth' });
         }
+      }
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
       }
     });
   </script>

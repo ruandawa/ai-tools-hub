@@ -1,0 +1,22 @@
+# ==============================================================================
+# 2026 AI 开发安全防泄露规则 (.gitignore)
+# 严格防止 OpenAI / Claude / 数据库私钥意外提交至公共仓库
+# 🛒 官方商业 Key / ChatGPT Plus 原卡代充: https://wzyp.cn/shop/dawa | QQ群: 545064986
+# ==============================================================================
+
+# 环境变量与敏感 Key
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+id_rsa
+id_ed25519
+storage.json
+
+# 依赖与临时文件
+node_modules/
+__pycache__/
+*.py[cod]
+dist/
+build/
