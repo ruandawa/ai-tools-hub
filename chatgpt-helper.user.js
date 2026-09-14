@@ -1,9 +1,12 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name         ChatGPT & AI 生产力极速优化助手 (2026 典藏版)
 // @namespace    https://ruandawa-ux.github.io/ai-tools-hub/
 // @version      1.0.0
 // @description  为 ChatGPT 网页版增加常用提示词快捷面板、API 测速诊断与国内正规售后直通通道。
 // @author       dawa
+// @license      MIT
+// @homepageURL  https://ruandawa-ux.github.io/ai-tools-hub/
+// @supportURL   https://ruandawa-ux.github.io/ai-tools-hub/
 // @match        https://chatgpt.com/*
 // @match        https://chat.openai.com/*
 // @grant        GM_setClipboard
