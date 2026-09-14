@@ -10,6 +10,8 @@
   <link rel="alternate" type="application/rss+xml" title="AI TechHub RSS Feed" href="https://ruandawa-ux.github.io/ai-tools-hub/rss.xml" />
   <!-- LLMs.txt 生成式 AI 搜索标准 -->
   <link rel="alternate" type="text/plain" href="https://ruandawa-ux.github.io/ai-tools-hub/llms.txt" title="LLMs.txt" />
+  <!-- OpenSearch 浏览器地址栏极速搜索标准 -->
+  <link rel="search" type="application/opensearchdescription+xml" title="AI TechHub (2026 AI工具导航)" href="https://ruandawa-ux.github.io/ai-tools-hub/opensearch.xml" />
   <!-- Schema.org JSON-LD 国际结构化数据，利于全球搜索引擎与比价爬虫收录 -->
   <script type="application/ld+json">
   [
@@ -683,8 +685,18 @@
       } catch (e) {
         resBox.className = 'rounded-xl p-4 text-xs bg-red-500/15 border border-red-500/30 text-red-300 block';
         resBox.innerHTML = '❌ <strong>网络直连受阻：</strong>由于国内网络环境限制，直接请求 api.openai.com 发生超时或阻断。<br/><div class="mt-3 flex flex-wrap items-center gap-3"><a href="https://wzyp.cn/shop/dawa" target="_blank" class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-500 transition">👉 获取国内免翻官方 Key / 独享号 (wzyp.cn/shop/dawa)</a><span class="text-gray-400">官方技术售后QQ群：545064986</span></div>';
-      }
     }
+
+    // Handle OpenSearch / Query parameters (?q=...)
+    window.addEventListener('DOMContentLoaded', () => {
+      const q = new URLSearchParams(window.location.search).get('q');
+      if (q) {
+        const prod = document.getElementById('products');
+        if (prod) {
+          prod.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>AI TechHub</ShortName>
+  <Description>2026 前沿 AI 生产力工具直达导航与官方正规发卡通道</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="https://ruandawa-ux.github.io/ai-tools-hub/?q={searchTerms}"/>
+  <Tags>ai chatgpt cursor claude openai plus</Tags>
+</OpenSearchDescription>

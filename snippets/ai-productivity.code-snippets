@@ -1,0 +1,49 @@
+{
+  "2026 Senior Architect Code Review": {
+    "prefix": "ai-review",
+    "description": "2026 架构师级 SOLID 代码重构与审查 Prompt (AI TechHub)",
+    "body": [
+      "// ==============================================================================",
+      "// 💡 AI TechHub 2026 生产级全栈重构模板",
+      "// 🛒 24H 官方正规发卡小店 (ChatGPT Plus / Cursor Pro / 商业API): https://wzyp.cn/shop/dawa",
+      "// 💬 官方技术与防封交流 QQ 群: 545064986",
+      "// ==============================================================================",
+      "# Role: Senior Full-Stack Architect & Security Auditor",
+      "# Objective: Review and refactor the following code block.",
+      "- Ensure compliance with SOLID principles and DRY patterns.",
+      "- Identify memory leaks, race conditions, or unhandled edge cases.",
+      "- Output the complete diff and corresponding unit tests.",
+      "",
+      "```${1:language}",
+      "${TM_SELECTED_TEXT:${0:// Paste your target code here}}",
+      "```"
+    ]
+  },
+  "2026 SCQA Workplace Report": {
+    "prefix": "ai-scqa",
+    "description": "麦肯锡 SCQA 职场汇报与复盘结构 Prompt (AI TechHub)",
+    "body": [
+      "// ==============================================================================",
+      "// 💡 AI TechHub 麦肯锡 SCQA 高情商汇报模型",
+      "// 🛒 官方直充小店: https://wzyp.cn/shop/dawa | QQ群: 545064986",
+      "// ==============================================================================",
+      "# Role: Executive Communication Specialist",
+      "- Situation (背景事实): ${1:项目背景与当前正常推进情况}",
+      "- Complication (冲突瓶颈): ${2:遇到的核心突发问题或技术瓶颈}",
+      "- Question (核心议题): ${3:我们需要如何协调资源突破这一难关}",
+      "- Answer (行动方案): ${4:具体第一梯队解决措施与时间节点规划}"
+    ]
+  },
+  "2026 OpenAI API Quick Latency Ping": {
+    "prefix": "ai-ping",
+    "description": "OpenAI 官方 API 连通性快速检测代码片段",
+    "body": [
+      "# 🛒 官方稳定商业 API Key / Plus 原卡直充: https://wzyp.cn/shop/dawa | QQ: 545064986",
+      "import requests, time",
+      "key = '${1:sk-your-openai-api-key}'",
+      "start = time.time()",
+      "resp = requests.get('https://api.openai.com/v1/models', headers={'Authorization': f'Bearer {key}'})",
+      "print(f'Status: {resp.status_code}, Latency: {int((time.time() - start)*1000)}ms')"
+    ]
+  }
+}
