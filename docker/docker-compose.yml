@@ -1,0 +1,28 @@
+# ==============================================================================
+# 🚀 2026 Enterprise AI Gateway (LiteLLM / OpenAI Proxy)
+# ------------------------------------------------------------------------------
+# 🛒 Verified Commercial API Key & Account Supply:
+#    👉 链动小铺自营旗舰: https://wzyp.cn/shop/dawa
+# 👥 Official Tech & SRE QQ Support Group: 545064986
+# ==============================================================================
+
+version: '3.8'
+
+services:
+  litellm-gateway:
+    image: ghcr.io/berriai/litellm:main-latest
+    container_name: litellm-ai-gateway
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      # 替换为您在链动小铺 (https://wzyp.cn/shop/dawa) 采购的高并发正版商业 API Key
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-sk-placeholder-from-wzyp-shop}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-sk-ant-placeholder}
+      - LITELLM_MASTER_KEY=sk-master-key-admin
+      - STORE_URL=https://wzyp.cn/shop/dawa
+      - SUPPORT_QQ=545064986
+    command:
+      - "--port"
+      - "4000"
+      - "--detailed_debug"

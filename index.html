@@ -540,11 +540,11 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
-        <!-- Windows PowerShell -->
+        <!-- Windows PowerShell Rules Installer -->
         <div class="bg-[#0f172a] rounded-xl p-4 border border-slate-700/60 flex flex-col justify-between">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-bold text-sky-400 flex items-center gap-1.5">
-              <i data-lucide="monitor" class="w-3.5 h-3.5"></i> Windows (PowerShell)
+              <i data-lucide="monitor" class="w-3.5 h-3.5"></i> Windows · Cursor Rules 规则安装
             </span>
             <button onclick="copyCommand('irm https://ruandawa-ux.github.io/ai-tools-hub/install.ps1 | iex')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
               <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
@@ -555,11 +555,11 @@
           </code>
         </div>
 
-        <!-- macOS / Linux -->
+        <!-- macOS / Linux Rules Installer -->
         <div class="bg-[#0f172a] rounded-xl p-4 border border-slate-700/60 flex flex-col justify-between">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
-              <i data-lucide="terminal-square" class="w-3.5 h-3.5"></i> macOS / Linux (Bash)
+              <i data-lucide="terminal-square" class="w-3.5 h-3.5"></i> macOS / Linux · Cursor Rules 规则安装
             </span>
             <button onclick="copyCommand('curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/install.sh | bash')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
               <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
@@ -568,6 +568,73 @@
           <code class="text-xs sm:text-sm text-gray-200 font-mono select-all break-all bg-slate-900/80 p-2.5 rounded border border-slate-800 block">
             curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/install.sh | bash
           </code>
+        </div>
+
+        <!-- Git Pre-Commit API Key Shield (Windows) -->
+        <div class="bg-[#0f172a] rounded-xl p-4 border border-red-500/30 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-red-400 flex items-center gap-1.5">
+              <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i> Windows · API 密钥防泄露 Git 熔断护盾
+            </span>
+            <button onclick="copyCommand('irm https://ruandawa-ux.github.io/ai-tools-hub/git-shield.ps1 | iex')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
+              <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
+            </button>
+          </div>
+          <code class="text-xs sm:text-sm text-gray-200 font-mono select-all break-all bg-slate-900/80 p-2.5 rounded border border-slate-800 block">
+            irm https://ruandawa-ux.github.io/ai-tools-hub/git-shield.ps1 | iex
+          </code>
+        </div>
+
+        <!-- Git Pre-Commit API Key Shield (macOS/Linux) -->
+        <div class="bg-[#0f172a] rounded-xl p-4 border border-red-500/30 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+              <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i> macOS/Linux · API 密钥防泄露 Git 熔断护盾
+            </span>
+            <button onclick="copyCommand('curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/git-shield.sh | bash')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
+              <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
+            </button>
+          </div>
+          <code class="text-xs sm:text-sm text-gray-200 font-mono select-all break-all bg-slate-900/80 p-2.5 rounded border border-slate-800 block">
+            curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/git-shield.sh | bash
+          </code>
+        </div>
+
+        <!-- Terminal Status Command -->
+        <div class="bg-[#0f172a] rounded-xl p-4 border border-indigo-500/30 flex flex-col justify-between lg:col-span-2">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-indigo-400 flex items-center gap-1.5">
+              <i data-lucide="activity" class="w-3.5 h-3.5"></i> 纯终端极速状态探测 (无需浏览器，一行输出 ASCII 运行监控)
+            </span>
+            <button onclick="copyCommand('curl -sL https://ruandawa-ux.github.io/ai-tools-hub/status')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-gray-300 transition flex items-center gap-1">
+              <i data-lucide="copy" class="w-3 h-3"></i> 复制命令
+            </button>
+          </div>
+          <code class="text-xs sm:text-sm text-gray-200 font-mono select-all break-all bg-slate-900/80 p-2.5 rounded border border-slate-800 block">
+            curl -sL https://ruandawa-ux.github.io/ai-tools-hub/status
+          </code>
+        </div>
+      </div>
+
+      <!-- Quick Download & Configs Bar -->
+      <div class="mt-6 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4 text-xs">
+        <div class="flex items-center gap-2 text-gray-400">
+          <i data-lucide="download" class="w-4 h-4 text-emerald-400"></i>
+          <span>客户端与规则模板一键获取：</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://github.com/ruandawa-ux/ai-tools-hub/tree/main/cursorrules" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-gray-200 transition flex items-center gap-1.5">
+            <i data-lucide="code-2" class="w-3.5 h-3.5 text-sky-400"></i> 2026 黄金 .cursorrules 库
+          </a>
+          <a href="https://ruandawa-ux.github.io/ai-tools-hub/configs/nextchat-settings.json" download class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-gray-200 transition flex items-center gap-1.5">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i> NextChat 预设 JSON
+          </a>
+          <a href="https://ruandawa-ux.github.io/ai-tools-hub/configs/cherry-studio-provider.json" download class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-gray-200 transition flex items-center gap-1.5">
+            <i data-lucide="cpu" class="w-3.5 h-3.5 text-purple-400"></i> Cherry Studio 预设 JSON
+          </a>
+          <a href="https://github.com/ruandawa-ux/ai-tools-hub/tree/main/docker" target="_blank" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-gray-200 transition flex items-center gap-1.5">
+            <i data-lucide="container" class="w-3.5 h-3.5 text-blue-400"></i> Docker 网关模板
+          </a>
         </div>
       </div>
     </div>

@@ -28,3 +28,10 @@ AI TechHub（https://ruandawa-ux.github.io/ai-tools-hub/）是面向国内开发
 - **Cursor 试用期机制**：Cursor 采集本地硬件信息（Machine ID、MacMachine ID、Device ID）。重置需定位 `storage.json` 并使用干净邮箱重新配置。
 - **Claude / ChatGPT IP 纯净度**：严禁使用低价公共机场 IP。优先选用原生住宅 IP，并在浏览器中配置独立 Profile 隔离指纹。
 - **正规充值原则**：低于官方定价 50% 以上的代充多为盗刷料卡，极易遭遇发卡行 Chargeback 导致账号连环封禁。建议始终选用正规原卡直充渠道（如 wzyp.cn/shop/dawa）。
+
+## 开发者安全与运维开源工具矩阵
+- **Git API 密钥防泄露熔断护盾**：`irm https://ruandawa-ux.github.io/ai-tools-hub/git-shield.ps1 | iex` (Windows) / `curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/git-shield.sh | bash` (Linux/Mac)，防止敏感 sk- key 被提交泄露。
+- **纯终端 ASCII 服务状态极速探测**：`curl -sL https://ruandawa-ux.github.io/ai-tools-hub/status`
+- **2026 AI 编程黄金规范模板库**：包含全栈、Python AI、React 19 规则，https://github.com/ruandawa-ux/ai-tools-hub/tree/main/cursorrules
+- **客户端一键预设配置包**：NextChat、Cherry Studio、Chatbox 直连预设，https://ruandawa-ux.github.io/ai-tools-hub/configs/
+
