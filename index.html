@@ -337,7 +337,7 @@
     </div>
 
     <!-- Multi-Ecosystem Tools: Tampermonkey, Postman, Docker -->
-    <div class="mb-16 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <!-- 1. Tampermonkey Card -->
       <div class="p-6 rounded-2xl glass-card border border-emerald-500/30 flex flex-col justify-between">
         <div>
@@ -357,7 +357,26 @@
         </div>
       </div>
 
-      <!-- 2. Postman Collection Card -->
+      <!-- 2. PyPI CLI Tool Card -->
+      <div class="p-6 rounded-2xl glass-card border border-yellow-500/30 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-yellow-900/50 border border-yellow-500/30 flex items-center justify-center mb-3 text-yellow-400">
+            <i data-lucide="terminal" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">PyPI 终端极速诊断工具</h3>
+          <p class="text-gray-400 text-xs mb-4">
+            全球开发者通过终端一行命令秒级体检 OpenAI 连通性与模型矩阵。
+          </p>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="copyCommand('pip install gpt-ping-cn && gpt-ping')" class="flex-1 py-2 rounded-lg bg-yellow-600/30 hover:bg-yellow-600/50 text-yellow-300 border border-yellow-500/30 text-xs font-semibold text-center transition flex items-center justify-center gap-1.5" title="点击复制 pip 安装命令">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span>pip install gpt-ping-cn</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Postman Collection Card -->
       <div class="p-6 rounded-2xl glass-card border border-orange-500/30 flex flex-col justify-between">
         <div>
           <div class="w-10 h-10 rounded-xl bg-orange-900/50 border border-orange-500/30 flex items-center justify-center mb-3 text-orange-400">
@@ -365,7 +384,7 @@
           </div>
           <h3 class="text-base font-bold text-white mb-1">Postman 旗舰接口调试包</h3>
           <p class="text-gray-400 text-xs mb-4">
-            全面支持 o1 / o3 / GPT-5 / GPT-4o 接口调试、模型枚举与 API 连通性测试 Collection，导入即用。
+            全面支持 o1 / o3 / GPT-5 / GPT-4o 接口调试、模型枚举与 API 连通性测试 Collection。
           </p>
         </div>
         <a href="OpenAI_GPT4o_API_Diagnostics.postman_collection.json" download="OpenAI_NextGen_API_Diagnostics.postman_collection.json" class="w-full py-2 rounded-lg bg-orange-600/30 hover:bg-orange-600/50 text-orange-300 border border-orange-500/30 text-xs font-semibold text-center transition flex items-center justify-center gap-1.5">
@@ -374,7 +393,7 @@
         </a>
       </div>
 
-      <!-- 3. Docker Quickstart Card -->
+      <!-- 4. Docker Quickstart Card -->
       <div class="p-6 rounded-2xl glass-card border border-blue-500/30 flex flex-col justify-between">
         <div>
           <div class="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-500/30 flex items-center justify-center mb-3 text-blue-400">
