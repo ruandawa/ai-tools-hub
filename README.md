@@ -20,7 +20,7 @@
 
 ## 📖 项目简介
 
-本项目旨在打破国内外 AI 工具使用的信息差，系统性收录并更新 **Cursor Pro、Claude 3.7 Sonnet、ChatGPT-4o、Windsurf** 等顶尖大模型在 2026 年的**国内稳定使用方案、环境防封避坑手册、高阶 CRISPE 提示词库**，以及**正规原卡直充/独享车位极速自取通道**。
+本项目旨在打破国内外 AI 工具使用的信息差，系统性收录并更新 **Cursor Pro、Claude 3.7 Sonnet、ChatGPT Plus (支持 o1 / o3 / GPT-5 / GPT-6 全系旗舰)、Windsurf** 等顶尖大模型在 2026 年的**国内稳定使用方案、环境防封避坑手册、高阶 CRISPE 提示词库**，以及**正规原卡直充/独享车位极速自取通道**。
 
 ---
 
@@ -50,7 +50,7 @@
   curl -fsSL https://ruandawa-ux.github.io/ai-tools-hub/install.sh | bash
   ```
 
-### 2. Claude 3.7 / ChatGPT-4o 稳定网络与环境避坑
+### 2. Claude 3.7 / ChatGPT Plus 稳定网络与环境避坑
 *   **节点与 IP 纯净度**：严禁使用万人共享的低价机场（已被加入 OpenAI / Anthropic 黑名单），推荐原生住宅 IP 或冷门专线。
 *   **浏览器指纹防关联**：在 Chrome / Edge 中建立独立的 Profile，首选语言设置为 `en-US`，系统时区与节点地区保持严格对齐。
 *   **拒绝黑卡盗刷**：切勿购买 30~50 元的极端低价代充，发卡行一旦拒付（Chargeback），官方 100% 封号。

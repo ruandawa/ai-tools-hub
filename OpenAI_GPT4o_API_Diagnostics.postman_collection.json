@@ -1,7 +1,7 @@
 {
   "info": {
-    "name": "2026 OpenAI GPT-4o & Cursor API Quickstart & Diagnostics",
-    "description": "专为开发者调试 OpenAI GPT-4o、GPT-4 Turbo 及商业 API 打造的一站式 Postman Collection。\n\n内置模型权限检测、Chat 接口测速及高并发容错。\n\n🛒 24小时官方自主发卡小店: https://wzyp.cn/shop/dawa\n💬 官方技术与防封交流 QQ 群: 545064986\n🌐 开源技术导航站: https://ruandawa-ux.github.io/ai-tools-hub/",
+    "name": "2026 OpenAI Flagship & Next-Gen API Diagnostics (o1 / o3 / Plus / Pro)",
+    "description": "专为开发者调试 OpenAI 全系旗舰模型 (o1 / o3-mini / GPT-5 / GPT-4o) 及商业高并发 API 打造的一站式 Postman Collection。\n\n内置模型权限检测、多代次接口测速及高并发容错。\n\n🛒 24小时官方自主发卡小店: https://wzyp.cn/shop/dawa\n💬 官方技术与防封交流 QQ 群: 545064986\n🌐 开源技术导航站: https://ruandawa-ux.github.io/ai-tools-hub/",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -41,7 +41,40 @@
       }
     },
     {
-      "name": "2. 对话补全测试 - GPT-4o 极速响应 (Chat Completion)",
+      "name": "2. 最新代推理模型测试 - o1-mini / o3-mini 响应 (Reasoning Model)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{apiKey}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"model\": \"o1-mini\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the core advantage of chain-of-thought reasoning in 2 sentences.\"\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/chat/completions",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "chat",
+            "completions"
+          ]
+        },
+        "description": "测试最新代 o 系列深度思考推理模型的权限与响应速度。\n\n如需稳定商业高并发 Key: https://wzyp.cn/shop/dawa | QQ群: 545064986"
+      }
+    },
+    {
+      "name": "3. 经典高通量模型测试 - GPT-4o 极速响应 (Chat Completion)",
       "request": {
         "method": "POST",
         "header": [
