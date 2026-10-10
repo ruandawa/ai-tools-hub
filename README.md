@@ -55,6 +55,15 @@
 *   **浏览器指纹防关联**：在 Chrome / Edge 中建立独立的 Profile，首选语言设置为 `en-US`，系统时区与节点地区保持严格对齐。
 *   **拒绝黑卡盗刷**：切勿购买 30~50 元的极端低价代充，发卡行一旦拒付（Chargeback），官方 100% 封号。
 
+
+### 4. 2026 抖音/全网 AI 视频与短剧工业化制作 SOP（即梦AI + DeepSeek + 剪映）
+*   **痛点攻坚**：彻底解决传统抽卡“换镜头就换脸变身”与“动作剧烈融化畸变”两大行业死穴。
+*   **多视角角色资产库（Consistency Pack）**：在即梦AI (Seedance 2.5) 中构建正/侧/背三视图与 0.85 锚定权重，固定核心特征词与光影参数。
+*   **动态运镜与动作演进 Prompt**：采用以动作物理规律和景别推进为核心的提示词规范，杜绝呆滞静图拼接。
+*   **完整工业级教程与代码直达**：
+    *   👉 **美研智享视觉专栏**：[即梦AI短剧工业化全流程 SOP](https://www.meinvnv.com/guides.html#art-jimeng-ai-viral-short-video-pipeline)
+    *   👉 **DevNotes 技术专栏**：[DeepSeek-R2 + 即梦AI API 自动流水线架构实战](https://blog.bt116.com/posts/jimeng-deepseek-ai-short-drama-automation-pipeline-guide-2026.html)
+
 ### 3. 2026 万能 AI 结构化提示词（CRISPE 高阶库）
 *   **全栈工程师代码审查与 Bug 修复**：包含 SOLID 架构重构、算法复杂度评估与边界测试用例生成。
 *   **职场高情商汇报（SCQA 模型）**：突出贡献、情境交代、高情商争取下一步资源。
